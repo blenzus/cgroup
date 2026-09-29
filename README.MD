@@ -21,7 +21,7 @@ Puis installer les dépendances :
 
 pip install -r requirements.txt
 
-##2. Démarrer MySQL
+## 2. Démarrer MySQL
 docker compose up -d
 
 Vérifier que le conteneur fonctionne :
