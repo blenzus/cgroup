@@ -5,7 +5,7 @@ Docker Compose
 Python 3
 pip
 
-1. Installer les dépendances Python
+## 1. Installer les dépendances Python
 
 Créer éventuellement un environnement virtuel :
 
