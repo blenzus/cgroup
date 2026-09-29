@@ -1,0 +1,15 @@
+Mise en place de l'environnement :
+
+- Lancement WSL sur Windows afin d'utiliser Docker. (Version docker 29.8.0)
+- Copie de l'archive fournie dans le dossier projet
+- Vérification version Python (python3 --version) Python 3.10.12
+- python3 -m venv .venv (Création de l'env virtuel) et activation
+- Installation des dépendances Python dans le venv (pip install SQLAlchemy mysql-connector-python)
+- Génération d'un fichier requirements.txt (pip freeze > requirements.txt)
+- Création d'un fichier docker compose pour lancer le service MySQL containerisé
+- Création de la table en injectant le script SQL (
+docker compose exec -T database \
+  mysql -uuser_dteng -pcirilgroupt db_dteng \
+  < example_schema.sql )
+
+- Vérification de la création de la table (SHOW TABLES;)

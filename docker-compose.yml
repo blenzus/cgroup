@@ -1,0 +1,17 @@
+services:
+  database:
+    image: mysql:8.0
+    container_name: dteng-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: db_dteng
+      MYSQL_USER: user_dteng
+      MYSQL_PASSWORD: cirilgroupt
+      MYSQL_ROOT_PASSWORD: rootpassword
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+volumes:
+  mysql_data:
