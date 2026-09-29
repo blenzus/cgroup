@@ -4,6 +4,7 @@ Docker
 Docker Compose
 Python 3
 pip
+
 1. Installer les dépendances Python
 
 Créer éventuellement un environnement virtuel :
@@ -25,11 +26,13 @@ docker compose up -d
 Vérifier que le conteneur fonctionne :
 
 docker compose ps
+
 3. Créer les tables
 docker compose exec -T database mysql \
   -uuser_dteng \
   -pcirilgroupt \
   db_dteng < schema.sql
+
 4. Exécuter le programme
 python example.py
 
