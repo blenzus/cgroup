@@ -20,20 +20,21 @@ source .venv/bin/activate
 Puis installer les dépendances :
 
 pip install -r requirements.txt
-2. Démarrer MySQL
+
+##2. Démarrer MySQL
 docker compose up -d
 
 Vérifier que le conteneur fonctionne :
 
 docker compose ps
 
-3. Créer les tables
+## 3. Créer les tables
 docker compose exec -T database mysql \
   -uuser_dteng \
   -pcirilgroupt \
   db_dteng < schema.sql
 
-4. Exécuter le programme
+## 4. Exécuter le programme
 python example.py
 
 Le fichier suivant est alors généré :
